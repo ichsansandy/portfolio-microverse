@@ -159,12 +159,11 @@ body {
   }
 
   .card-button {
-    height: 15%;
-    width: 37%;
+    padding: 12px;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    letter-spacing: 0.03em;
+    
   }
 
   /* about me section */
