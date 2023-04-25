@@ -4,17 +4,21 @@
 .primary-green {
   color: #36b37e;
 }
+
 .secondary-green {
   color: #c5e9da;
 }
+
 .tone-green {
   color: #ebf0ee;
 }
+
 .dark {
   color: #172b4d;
 }
+
 .white {
-  color: #ffffff;
+  color: #fff;
 }
 
 body {
@@ -72,7 +76,9 @@ body {
     margin-top: 12vh;
     bottom: 7vh;
   }
+
 }
+
 /* dekstop */
 @media screen and (min-width: 768px) {
 }
