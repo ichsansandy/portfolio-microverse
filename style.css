@@ -23,46 +23,61 @@ body {
   margin: 0;
 }
 
-.header{
+/* mobile */
+@media screen and (min-width: 375px) {
+  .header {
     display: flex;
     justify-content: end;
     margin-right: 5vw;
     height: 5vh;
-}
+  }
 
-
-
-.heroku{
+  .heroku {
+    position: relative;
     display: flex;
     justify-content: center;
     background-image: url(/assets/header-illsutration-mobile@2x.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
-}
+  }
 
-.heroku-container{
+  .heroku-container {
     width: 84%;
-}
+  }
 
-.primary-text {
+  .primary-text {
     font-size: 40px;
     line-height: 52px;
     font-weight: 700;
-}
+  }
 
-.support-text{
-   font-size: 20px;
-   line-height: 28px;
-   font-weight: 400;
-}
+  .support-text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
 
-.action-button-wrapper{
+  .socialmedia-wrapper {
     display: flex;
-    justify-content:center ;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .action-button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    bottom: 7vh;
+  }
+}
+/* dekstop */
+@media screen and (min-width: 768px) {
 }
 
 /* utility class */
 .center-text {
-    text-align: center;
-  }
+  text-align: center;
+}
