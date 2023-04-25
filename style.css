@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+:root {
+  --primary-green: #36b37e;
+}
+
 /* text color */
 .primary-green {
   color: #36b37e;
@@ -38,15 +42,14 @@ body {
 
   .heroku {
     position: relative;
-    display: flex;
-    justify-content: center;
+
     background-image: url(/assets/header-illsutration-mobile@2x.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
   }
 
-  .heroku-container {
+  .section-container {
     width: 84%;
   }
 
@@ -91,12 +94,18 @@ body {
   }
 
   .scroll-button:hover {
-    background-color: #36b37e;
+    background-color: var(--primary-green);
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
 
   .scroll-button:hover .arrow-icon {
     fill: white;
+  }
+
+  .divider-rounded {
+    border-top: 8px solid var(--primary-green);
+    border-radius: 5px;
+    width: 30%;
   }
 }
 
@@ -110,4 +119,9 @@ body {
 /* utility class */
 .center-text {
   text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
