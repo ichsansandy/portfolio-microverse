@@ -33,6 +33,7 @@ body {
 
 /* mobile */
 @media screen and (min-width: 375px) {
+  /* header section */
   .header {
     display: flex;
     justify-content: end;
@@ -40,17 +41,13 @@ body {
     height: 5vh;
   }
 
+  /* heroku section */
   .heroku {
     position: relative;
-
     background-image: url(/assets/header-illsutration-mobile@2x.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
-  }
-
-  .section-container {
-    width: 84%;
   }
 
   .primary-text {
@@ -102,12 +99,13 @@ body {
     fill: white;
   }
 
+  /* work section */
   .divider-rounded {
     border-top: 8px solid var(--primary-green);
     border-radius: 5px;
     width: 30%;
   }
-  
+
   .card-container {
     margin-block: 60px;
     display: grid;
@@ -126,7 +124,7 @@ body {
 
   .card-image {
     height: 53%;
-    background-color: gray;
+    background-color: #d0d9d4;
   }
 
   .card-info {
@@ -150,10 +148,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   .tag {
-    background-color: #EBF0EE;
+    list-style: none;
+    background-color: #ebf0ee;
     border: none;
     border-radius: 4px;
     padding: 8px 12px;
@@ -166,15 +167,23 @@ body {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    /* identical to box height, or 141% */
     letter-spacing: 0.03em;
-    background-color: var(--primary-green);
-    border-radius: 4px;
-    border: none;
   }
 
-  .card-button:hover{
-    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  /* about me section */
+  .aboutme {
+    background: url(/assets/illustration-\ about\ me-\ mobile.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+
+  .get-resume-button {
+    padding: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    width: 45%;
   }
 }
 
@@ -186,6 +195,20 @@ body {
 }
 
 /* utility class */
+.section-container {
+  width: 85%;
+}
+
+.button {
+  background-color: var(--primary-green);
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
 .center-text {
   text-align: center;
 }
@@ -193,4 +216,12 @@ body {
 .flex-center {
   display: flex;
   justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
 }
