@@ -137,9 +137,6 @@ body {
 
   .card-title {
     height: 25%;
-    font-weight: 600;
-    font-size: 24px;
-    margin: 0;
   }
 
   .tag-container {
@@ -173,7 +170,7 @@ body {
   /* about me section */
   .aboutme {
     background: url(/assets/illustration-\ about\ me-\ mobile.png);
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     margin-bottom: 30px;
   }
@@ -184,6 +181,45 @@ body {
     font-size: 17px;
     line-height: 24px;
     width: 45%;
+  }
+
+  .aboutme-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-block: 20px;
+  }
+
+  .box {
+    aspect-ratio: 9/10;
+    width: 100%;
+    background-color: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-inline: 8px;
+  }
+
+  .icon-container {
+    height: 30%;
+  }
+
+  .list-aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 8px;
+  }
+
+  .list-item-aboutme {
+    background: #fff;
+    border-radius: 8px;
+    list-style: none;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -197,6 +233,10 @@ body {
 /* utility class */
 .section-container {
   width: 85%;
+}
+
+.margin-zero {
+  margin: 0;
 }
 
 .button {
@@ -224,4 +264,10 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+.title-text {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
 }
