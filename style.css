@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* text color */
+.primary-green {
+  color: #36b37e;
+}
+
+.secondary-green {
+  color: #c5e9da;
+}
+
+.tone-green {
+  color: #ebf0ee;
+}
+
+.dark {
+  color: #172b4d;
+}
+
+.white {
+  color: #fff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* mobile */
+@media screen and (min-width: 375px) {
+  .header {
+    display: flex;
+    justify-content: end;
+    margin-right: 5vw;
+    height: 5vh;
+  }
+
+  .heroku {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/header-illsutration-mobile@2x.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .heroku-container {
+    width: 84%;
+  }
+
+  .primary-text {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .support-text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .socialmedia-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .action-button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+  }
+
+  .arrow-icon {
+    fill: #172b4d;
+  }
+
+  .scroll-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .scroll-button:hover {
+    background-color: #36b37e;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .scroll-button:hover .arrow-icon {
+    fill: white;
+  }
+}
+
+/* dekstop */
+@media screen and (min-width: 768px) {
+  .heroku {
+    background-image: none;
+  }
+}
+
+/* utility class */
+.center-text {
+  text-align: center;
+}
