@@ -73,14 +73,18 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 12vh;
-    bottom: 7vh;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
   }
-
 }
 
 /* dekstop */
 @media screen and (min-width: 768px) {
+  .heroku {
+    background-image: none;
+  }
 }
 
 /* utility class */
