@@ -79,23 +79,23 @@ body {
     right: 0;
   }
 
-  .arrow-icon{
+  .arrow-icon {
     fill: #172b4d;
   }
 
-  .scroll-button{
+  .scroll-button {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     border: none;
   }
 
-  .scroll-button:hover{
+  .scroll-button:hover {
     background-color: #36b37e;
-    box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
-  
-  .scroll-button:hover .arrow-icon{
+
+  .scroll-button:hover .arrow-icon {
     fill: white;
   }
 }
