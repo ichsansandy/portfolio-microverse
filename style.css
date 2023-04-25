@@ -188,6 +188,7 @@ body {
     flex-direction: column;
     gap: 24px;
     margin-block: 20px;
+    padding: 0;
   }
 
   .box {
@@ -198,6 +199,11 @@ body {
     border-radius: 8px;
     box-sizing: border-box;
     padding-inline: 8px;
+    list-style: none;
+  }
+
+  .aboutme-title {
+    height: 15%;
   }
 
   .icon-container {
