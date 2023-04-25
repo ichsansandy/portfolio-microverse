@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: end;
     margin-right: 5vw;
-    height: 48px;
+    height: 5vh;
 }
 
 
@@ -55,6 +55,11 @@ body {
    font-size: 20px;
    line-height: 28px;
    font-weight: 400;
+}
+
+.action-button-wrapper{
+    display: flex;
+    justify-content:center ;
 }
 
 /* utility class */
