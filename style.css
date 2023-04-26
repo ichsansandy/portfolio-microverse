@@ -167,10 +167,27 @@ body {
 
   /* about me section */
   .aboutme {
-    background: url(/assets/illustration-\ about\ me-\ mobile.png);
-    background-position: bottom;
-    background-size: cover;
+    position: relative;
     margin-bottom: 30px;
+  }
+
+  .aboutme::before{
+    position: absolute;
+    content: "";
+    background: url(assets/illustration1-aboutme-mobile.svg);
+    width: 68px;
+    height: 110px;
+    top: -13%;
+    right: -10%;
+  }
+  .aboutme::after{
+    position: absolute;
+    content: "";
+    background: url(assets/illustration2-aboutme-mobile.svg);
+    width: 71px;
+    height: 58px;
+    bottom: 0;
+    left: -10%;
   }
 
   .get-resume-button {
@@ -259,6 +276,13 @@ body {
 
 .center-text {
   text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+.grid-col-1 {
+  grid-template-columns: 1fr;
 }
 
 .flex-center {
