@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+:root {
+  --primary-green: #36b37e;
+}
+
 /* text color */
 .primary-green {
   color: #36b37e;
@@ -29,6 +33,7 @@ body {
 
 /* mobile */
 @media screen and (min-width: 375px) {
+  /* header section */
   .header {
     display: flex;
     justify-content: end;
@@ -36,18 +41,13 @@ body {
     height: 5vh;
   }
 
+  /* heroku section */
   .heroku {
     position: relative;
-    display: flex;
-    justify-content: center;
     background-image: url(/assets/header-illsutration-mobile@2x.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
-  }
-
-  .heroku-container {
-    width: 84%;
   }
 
   .primary-text {
@@ -91,12 +91,157 @@ body {
   }
 
   .scroll-button:hover {
-    background-color: #36b37e;
+    background-color: var(--primary-green);
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
 
   .scroll-button:hover .arrow-icon {
     fill: white;
+  }
+
+  /* work section */
+  .divider-rounded {
+    border-top: 8px solid var(--primary-green);
+    border-radius: 5px;
+    width: 30%;
+  }
+
+  .card-container {
+    margin-block: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    height: 55vh;
+    background-color: #fff;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image {
+    height: 53%;
+    background-color: #d0d9d4;
+  }
+
+  .card-info {
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card-title {
+    height: 25%;
+  }
+
+  .tag-container {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tag {
+    list-style: none;
+    background-color: #ebf0ee;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .card-button {
+    padding: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  /* about me section */
+  .aboutme {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .aboutme::before {
+    position: absolute;
+    content: "";
+    background: url(assets/illustration1-aboutme-mobile.svg);
+    width: 68px;
+    height: 110px;
+    top: -13%;
+    right: -10%;
+  }
+
+  .aboutme::after {
+    position: absolute;
+    content: "";
+    background: url(assets/illustration2-aboutme-mobile.svg);
+    width: 71px;
+    height: 58px;
+    bottom: 0;
+    left: -10%;
+  }
+
+  .get-resume-button {
+    padding: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    width: 45%;
+  }
+
+  .aboutme-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-block: 20px;
+    padding: 0;
+  }
+
+  .box {
+    aspect-ratio: 9/10;
+    width: 100%;
+    background-color: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-inline: 8px;
+    list-style: none;
+  }
+
+  .aboutme-title {
+    height: 15%;
+  }
+
+  .icon-container {
+    height: 30%;
+  }
+
+  .list-aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 8px;
+  }
+
+  .list-item-aboutme {
+    background: #fff;
+    border-radius: 8px;
+    list-style: none;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -108,6 +253,55 @@ body {
 }
 
 /* utility class */
+.section-container {
+  width: 85%;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+.button {
+  background-color: var(--primary-green);
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.button:focus {
+  background-color: #008552;
+}
+
 .center-text {
   text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-1 {
+  grid-template-columns: 1fr;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.title-text {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
 }
