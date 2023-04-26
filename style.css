@@ -171,7 +171,7 @@ body {
     margin-bottom: 30px;
   }
 
-  .aboutme::before{
+  .aboutme::before {
     position: absolute;
     content: "";
     background: url(assets/illustration1-aboutme-mobile.svg);
@@ -180,7 +180,8 @@ body {
     top: -13%;
     right: -10%;
   }
-  .aboutme::after{
+
+  .aboutme::after {
     position: absolute;
     content: "";
     background: url(assets/illustration2-aboutme-mobile.svg);
@@ -281,6 +282,7 @@ body {
 .grid {
   display: grid;
 }
+
 .grid-col-1 {
   grid-template-columns: 1fr;
 }
