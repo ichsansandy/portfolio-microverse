@@ -185,6 +185,7 @@ body {
   .aboutme {
     position: relative;
     margin-bottom: 30px;
+    width: 85%;
   }
 
   .aboutme::before {
@@ -212,7 +213,7 @@ body {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    width: 45%;
+    width: auto;
   }
 
   .aboutme-box-container {
@@ -320,6 +321,10 @@ body {
   .form-container textarea:focus {
     border: 1px solid #60c095;
     outline: 1px solid #60c095;
+  }
+
+  .form-container button {
+    place-self: center;
   }
 
   /* footer section */
@@ -434,7 +439,7 @@ body {
   /* work section */
 
   .works {
-    margin-bottom: 50px;
+    margin-bottom: 192px;
   }
 
   .card-container {
@@ -443,6 +448,32 @@ body {
   }
 
   /* aboutme section */
+
+  .aboutme {
+    width: 770px;
+  }
+
+  .aboutme::before {
+    position: absolute;
+    content: "";
+    background: url(assets/illustration2-aboutme-dekstop.svg);
+    width: 224px;
+    height: 245px;
+    top: -50%;
+    right: -45%;
+  }
+
+  .aboutme::after {
+    position: absolute;
+    content: "";
+    background: url(assets/illustration1-aboutme-dekstop.svg);
+    width: 236px;
+    height: 128px;
+    bottom: -0%;
+    left: -45%;
+    z-index: -1;
+  }
+
   .aboutme-box-container {
     flex-direction: row;
     justify-content: center;
@@ -456,6 +487,25 @@ body {
     align-items: center;
     padding-top: 20px;
     gap: 20px;
+  }
+
+  /* form section */
+  .form {
+    display: flex;
+  }
+
+  .form h2 {
+    font-size: 30px;
+    width: 45%;
+    text-align: left;
+  }
+
+  .form-container {
+    width: 55%;
+  }
+
+  .form-container button {
+    place-self: start;
   }
 }
 
@@ -517,6 +567,6 @@ body {
   width: fit-content;
 }
 
-.self-center {
+/* .self-center {
   place-self: center;
-}
+} */
