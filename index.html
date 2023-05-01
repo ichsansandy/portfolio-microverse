@@ -351,7 +351,19 @@
     <section class="flex-center">
       <div class="section-container">
         <h2 class="primary-text dark center-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form></form>
+        <form class="form-container" action="https://formspree.io/f/mzbqodyb" method="POST">
+          <label for="full_name">
+            <input placeholder="Full name" type="text" name="full_name" />
+          </label>
+          <label for="email">
+            <input type="email" name="email" />
+          </label>
+          <label for="message">
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
       </div>
     </section>
     <footer></footer>

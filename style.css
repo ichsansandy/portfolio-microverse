@@ -243,6 +243,40 @@ body {
     font-size: 12px;
     line-height: 16px;
   }
+
+  /* form section */
+  .form-container {
+    height: 55vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .form-container input {
+    padding: 15px 16px;
+  }
+
+  .form-container input::placeholder {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .form-container textarea {
+    padding: 12px;
+  }
+
+  /* footer section */
 }
 
 /* dekstop */
