@@ -387,14 +387,14 @@ body {
     background-image: none;
   }
 
-  .heroku::before {
+  .header::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 110vh;
+    height: 150vh;
     z-index: -1;
     background-image: url(assets/Header-llustration-desktop.png);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
   }
