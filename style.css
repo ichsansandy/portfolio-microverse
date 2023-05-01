@@ -251,6 +251,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    position: relative;
+  }
+
+  .form-container::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/Frame.svg);
+    bottom: -20%;
+    right: -10%;
+    width: 63px;
+    height: 146px;
   }
 
   .form-container input,
@@ -294,7 +305,7 @@ body {
 
   /* footer section */
   .footer {
-    margin-top: 31px;
+    margin-top: 10px;
     width: 100%;
     justify-content: space-evenly;
     flex-direction: column;
