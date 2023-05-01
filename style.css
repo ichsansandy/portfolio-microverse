@@ -2,6 +2,7 @@
 
 :root {
   --primary-green: #36b37e;
+  --dark: #172b4d;
 }
 
 /* text color */
@@ -247,7 +248,7 @@ body {
   /* form section */
   .form-container {
     height: 55vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -287,6 +288,12 @@ body {
 
   .footer-container {
     width: 65%;
+  }
+
+  .divider-footer {
+    border-top: 8px solid var(--dark);
+    border-radius: 5px;
+    width: 30%;
   }
 }
 
