@@ -35,7 +35,7 @@
     <section class="heroku flex-center">
       <div class="heroku-container">
         <h2 class="primary-text dark center-text">
-          Hey there.<br class="break-line-hidden" />
+          Hey there.<br class="dekstop-hidden" />
           I'm Ichsan.<br />
           <span class="primary-green"> I'm a software developer </span>
         </h2>
@@ -93,7 +93,7 @@
     <section class="works flex-center">
       <div class="section-container grid grid-col-1">
         <h2 class="primary-text dark center-text">My Recent Works</h2>
-        <hr class="divider-rounded break-line-hidden" />
+        <hr class="divider-rounded dekstop-hidden" />
         <div class="card-container">
           <div class="card">
             <div class="card-image"></div>
@@ -352,22 +352,19 @@
       <div class="form section-container">
         <h2 class="primary-text dark center-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form class="form-container" action="https://formspree.io/f/mzbqodyb" method="POST">
-          <label for="full_name">
-            <input placeholder="Full name" type="text" name="full_name" maxlenght="30" required />
-          </label>
-          <label for="email">
-            <input type="email" name="email" placeholder="Email address" required />
-          </label>
-          <label for="message">
-            <textarea name="message" maxlenght="500" placeholder="Hey I’d like to connect to..." required></textarea>
-          </label>
-          <!-- your other form fields go here -->
+          <input class="dekstop-hidden" placeholder="Full name" type="text" name="full_name" maxlenght="30" required />
+          <div class="flex-center">
+            <input class="mobile-hidden" placeholder="First name" type="text" name="first_name" maxlenght="30" required />
+            <input class="mobile-hidden" placeholder="Last name" type="text" name="last_name" maxlenght="30" required />
+          </div>
+          <input type="email" name="email" placeholder="Email address" required />
+          <textarea name="message" maxlenght="500" placeholder="Hey I’d like to connect to..." required></textarea>
           <button class="button card-button white width-fit self-center" type="submit">Get in touch</button>
         </form>
       </div>
     </section>
     <footer class="footer flex-center">
-      <p class="support-text center-text break-line-hidden">ichsan2668@gmail.com</p>
+      <p class="support-text center-text dekstop-hidden">ichsan2668@gmail.com</p>
       <div class="socialmedia-wrapper footer-container">
         <!-- twitter icon -->
         <a href="" class="dark">
@@ -406,7 +403,7 @@
             fill="#505F79" />
         </svg>
       </div>
-      <hr class="divider-footer break-line-hidden" />
+      <hr class="divider-footer dekstop-hidden" />
     </footer>
   </body>
 </html>

@@ -267,6 +267,10 @@ body {
   }
 
   /* form section */
+  .mobile-hidden {
+    display: none;
+  }
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -413,7 +417,7 @@ body {
     width: 770px;
   }
 
-  .break-line-hidden {
+  .dekstop-hidden {
     display: none;
   }
 
@@ -492,6 +496,12 @@ body {
   /* form section */
   .form {
     display: flex;
+    margin-top: 97.5px;
+  }
+
+  .mobile-hidden {
+    display: block;
+    width: 40%;
   }
 
   .form h2 {
