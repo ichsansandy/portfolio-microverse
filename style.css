@@ -289,12 +289,12 @@ body {
   .form-container textarea:hover,
   .form-container textarea:focus {
     border: 1px solid #60c095;
-    outline: 1px solid #60c095;;
+    outline: 1px solid #60c095;
   }
 
   /* footer section */
   .footer {
-    height: 15vh;
+    margin-top: 31px;
     width: 100%;
     justify-content: space-evenly;
     flex-direction: column;
@@ -303,12 +303,14 @@ body {
 
   .footer-container {
     width: 65%;
+    margin-block: 30px;
   }
 
   .divider-footer {
-    border-top: 8px solid var(--dark);
+    margin: 0;
+    border-top: 6px solid var(--dark);
     border-radius: 5px;
-    width: 30%;
+    width: 50%;
   }
 }
 
@@ -371,4 +373,12 @@ body {
   font-weight: 600;
   font-size: 24px;
   margin: 0;
+}
+
+.width-fit {
+  width: fit-content;
+}
+
+.self-center {
+  place-self: center;
 }
