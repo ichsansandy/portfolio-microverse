@@ -2,6 +2,7 @@
 
 :root {
   --primary-green: #36b37e;
+  --secondary-green: #c5e9da;
   --dark: #172b4d;
 }
 
@@ -247,8 +248,6 @@ body {
 
   /* form section */
   .form-container {
-    height: 55vh;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -275,6 +274,22 @@ body {
 
   .form-container textarea {
     padding: 12px;
+    height: 114px;
+  }
+
+  .form-container textarea::placeholder {
+    /* font-style: italic; */
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .form-container input:hover,
+  .form-container input:focus,
+  .form-container textarea:hover,
+  .form-container textarea:focus {
+    border: 1px solid #60c095;
+    outline: 1px solid #60c095;;
   }
 
   /* footer section */
