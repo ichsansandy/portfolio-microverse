@@ -277,6 +277,15 @@ body {
   }
 
   /* footer section */
+  .footer {
+    height: 15vh;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .footer-container {
+    width: 65%;
+  }
 }
 
 /* dekstop */
