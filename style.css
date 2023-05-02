@@ -38,9 +38,18 @@ body {
   /* header section */
   .header {
     display: flex;
-    justify-content: end;
-    margin-right: 5vw;
     height: 5vh;
+    justify-content: center;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: end;
+    width: 90%;
+  }
+
+  .header nav {
+    display: none;
   }
 
   /* heroku section */
@@ -49,25 +58,36 @@ body {
     background-image: url(/assets/header-illsutration-mobile@2x.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
   }
 
+  .heroku-container {
+    width: 85%;
+  }
+
   .primary-text {
+    font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    font-weight: 700;
   }
 
   .support-text {
+    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 400;
   }
 
   .socialmedia-wrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .socialmedia-wrapper li a {
+    color: var(--dark);
   }
 
   .action-button-wrapper {
@@ -116,7 +136,7 @@ body {
   }
 
   .card {
-    height: 55vh;
+    height: 65vh;
     background-color: #fff;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
@@ -130,6 +150,7 @@ body {
   }
 
   .card-info {
+    padding: 5px;
     height: 47%;
     display: flex;
     flex-direction: column;
@@ -138,11 +159,11 @@ body {
   }
 
   .card-title {
-    height: 25%;
+    height: 30%;
   }
 
   .tag-container {
-    height: 15%;
+    height: 25%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -171,6 +192,7 @@ body {
   .aboutme {
     position: relative;
     margin-bottom: 30px;
+    width: 85%;
   }
 
   .aboutme::before {
@@ -198,7 +220,7 @@ body {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    width: 45%;
+    width: auto;
   }
 
   .aboutme-box-container {
@@ -218,6 +240,11 @@ body {
     box-sizing: border-box;
     padding-inline: 8px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 24px;
   }
 
   .aboutme-title {
@@ -247,6 +274,14 @@ body {
   }
 
   /* form section */
+  .mobile-hidden {
+    display: none;
+  }
+
+  .form {
+    width: 85%;
+  }
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -303,6 +338,10 @@ body {
     outline: 1px solid #60c095;
   }
 
+  .form-container button {
+    place-self: center;
+  }
+
   /* footer section */
   .footer {
     margin-top: 10px;
@@ -327,8 +366,223 @@ body {
 
 /* dekstop */
 @media screen and (min-width: 768px) {
+  /* header section */
+
+  .header {
+    height: 72px;
+    background-color: transparent;
+  }
+
+  .header svg {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+  }
+
+  .header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header nav ul {
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .header nav ul li a {
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 140vh;
+    z-index: -1;
+    background-image: url(assets/Header-llustration-desktop.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* heroku section */
   .heroku {
     background-image: none;
+    padding-top: 10vh;
+  }
+
+  .heroku-container {
+    width: 770px;
+  }
+
+  .dekstop-hidden {
+    display: none;
+  }
+
+  .primary-text {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .support-text {
+    line-height: 32px;
+  }
+
+  .socialmedia-wrapper {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .action-button-wrapper {
+    bottom: 30%;
+  }
+
+  /* work section */
+
+  .works {
+    margin-bottom: 192px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 32px;
+    place-self: center;
+  }
+
+  .card {
+    width: 369px;
+    height: 474px;
+    justify-self: center;
+  }
+
+  .card-title {
+    height: auto;
+    width: 60%;
+  }
+
+  /* aboutme section */
+
+  .aboutme {
+    width: 770px;
+  }
+
+  .aboutme::before {
+    position: absolute;
+    content: "";
+    background: url(assets/illustration2-aboutme-dekstop.svg);
+    width: 224px;
+    height: 245px;
+    top: -50%;
+    right: -50%;
+  }
+
+  .aboutme::after {
+    position: absolute;
+    content: "";
+    background: url(assets/illustration1-aboutme-dekstop.svg);
+    width: 236px;
+    height: 128px;
+    bottom: -0%;
+    left: -50%;
+    z-index: -1;
+  }
+
+  .aboutme-box-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box {
+    width: 343px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  /* form section */
+  .form {
+    display: flex;
+    margin-top: 97.5px;
+    height: 490px;
+    position: relative;
+    width: 1069px;
+  }
+
+  .form::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/form-ilustration1-dekstop.svg);
+    width: 194px;
+    height: 352px;
+    left: -20%;
+    bottom: -10%;
+  }
+
+  .form::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/form-ilustration2-dekstop.svg);
+    width: 131px;
+    height: 106px;
+    left: 5%;
+    bottom: 10%;
+  }
+
+  .form-container::after {
+    background-image: url(/assets/form-ilustration3-dekstop.svg);
+    width: 223px;
+    height: 496px;
+    bottom: -10%;
+    right: -35%;
+  }
+
+  .mobile-hidden {
+    display: block;
+  }
+
+  .form h2 {
+    font-size: 30px;
+    width: 45%;
+    text-align: left;
+  }
+
+  .form-container {
+    width: 55%;
+  }
+
+  .form-container button {
+    place-self: start;
+  }
+
+  .first-last-name-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: 72px;
+    border-top: 1px gray solid;
   }
 }
 
@@ -383,6 +637,7 @@ body {
 .title-text {
   font-weight: 600;
   font-size: 24px;
+  line-height: 32px;
   margin: 0;
 }
 
@@ -390,6 +645,6 @@ body {
   width: fit-content;
 }
 
-.self-center {
+/* .self-center {
   place-self: center;
-}
+} */
