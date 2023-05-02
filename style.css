@@ -449,6 +449,19 @@ body {
   .card-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 32px;
+  }
+
+  .card {
+    width: 369px;
+    height: 474px;
+    justify-self: center;
+  }
+
+  .card-title{
+    height: auto;
+    width: 60%;
   }
 
   /* aboutme section */
@@ -501,7 +514,6 @@ body {
 
   .mobile-hidden {
     display: block;
-    width: 40%;
   }
 
   .form h2 {
@@ -516,6 +528,11 @@ body {
 
   .form-container button {
     place-self: start;
+  }
+
+  .first-last-name-container {
+    display: flex;
+    gap: 24px;
   }
 }
 
@@ -570,6 +587,7 @@ body {
 .title-text {
   font-weight: 600;
   font-size: 24px;
+  line-height: 32px;
   margin: 0;
 }
 
