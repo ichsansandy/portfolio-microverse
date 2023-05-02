@@ -136,7 +136,7 @@ body {
   }
 
   .card {
-    height: 55vh;
+    height: 65vh;
     background-color: #fff;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
@@ -150,6 +150,7 @@ body {
   }
 
   .card-info {
+    padding: 5px;
     height: 47%;
     display: flex;
     flex-direction: column;
@@ -158,11 +159,11 @@ body {
   }
 
   .card-title {
-    height: 25%;
+    height: 30%;
   }
 
   .tag-container {
-    height: 15%;
+    height: 25%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
