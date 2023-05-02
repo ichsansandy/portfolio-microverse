@@ -459,7 +459,7 @@ body {
     justify-self: center;
   }
 
-  .card-title{
+  .card-title {
     height: auto;
     width: 60%;
   }
@@ -510,6 +510,36 @@ body {
   .form {
     display: flex;
     margin-top: 97.5px;
+    height: 490px;
+    position: relative;
+  }
+
+  .form::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/form-ilustration1-dekstop.svg);
+    width: 194px;
+    height: 352px;
+    left: -10%;
+    bottom: -10%;
+  }
+
+  .form::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/form-ilustration2-dekstop.svg);
+    width: 131px;
+    height: 106px;
+    left: 10%;
+    bottom: 10%;
+  }
+
+  .form-container::after {
+    background-image: url(/assets/form-ilustration3-dekstop.svg);
+    width: 223px;
+    height: 496px;
+    bottom: -10%;
+    right: -15%;
   }
 
   .mobile-hidden {
@@ -534,6 +564,8 @@ body {
     display: flex;
     gap: 24px;
   }
+
+  /* footer */
 }
 
 /* utility class */
