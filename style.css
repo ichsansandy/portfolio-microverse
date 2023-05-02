@@ -566,6 +566,10 @@ body {
   }
 
   /* footer */
+  .footer {
+    margin-top: 72px;
+    border-top: 1px gray solid;
+  }
 }
 
 /* utility class */
