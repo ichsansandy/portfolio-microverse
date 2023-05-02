@@ -599,10 +599,12 @@ body {
   background-color: var(--primary-green);
   border-radius: 4px;
   border: none;
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.1, 1.1);
 }
 
 .button:focus {
