@@ -396,11 +396,6 @@ body {
     line-height: 20px;
   }
 
-  /* heroku section */
-  .heroku {
-    background-image: none;
-  }
-
   .header::before {
     content: "";
     position: absolute;
@@ -411,6 +406,12 @@ body {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  /* heroku section */
+  .heroku {
+    background-image: none;
+    padding-top: 10vh;
   }
 
   .heroku-container {
