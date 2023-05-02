@@ -110,11 +110,13 @@ body {
     height: 42px;
     border-radius: 50%;
     border: none;
+    transition: transform 0.5s ease-in-out;
   }
 
   .scroll-button:hover {
     background-color: var(--primary-green);
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    transform : scale(1.1);
   }
 
   .scroll-button:hover .arrow-icon {
