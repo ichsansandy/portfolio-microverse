@@ -278,6 +278,10 @@ body {
     display: none;
   }
 
+  .form {
+    width: 85%;
+  }
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -486,7 +490,7 @@ body {
     width: 224px;
     height: 245px;
     top: -50%;
-    right: -45%;
+    right: -50%;
   }
 
   .aboutme::after {
@@ -496,7 +500,7 @@ body {
     width: 236px;
     height: 128px;
     bottom: -0%;
-    left: -45%;
+    left: -50%;
     z-index: -1;
   }
 
@@ -521,6 +525,7 @@ body {
     margin-top: 97.5px;
     height: 490px;
     position: relative;
+    width: 1069px;
   }
 
   .form::before {
@@ -529,7 +534,7 @@ body {
     background-image: url(/assets/form-ilustration1-dekstop.svg);
     width: 194px;
     height: 352px;
-    left: -10%;
+    left: -20%;
     bottom: -10%;
   }
 
@@ -539,7 +544,7 @@ body {
     background-image: url(/assets/form-ilustration2-dekstop.svg);
     width: 131px;
     height: 106px;
-    left: 10%;
+    left: 5%;
     bottom: 10%;
   }
 
@@ -548,7 +553,7 @@ body {
     width: 223px;
     height: 496px;
     bottom: -10%;
-    right: -15%;
+    right: -35%;
   }
 
   .mobile-hidden {
