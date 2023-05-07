@@ -45,11 +45,27 @@ body {
   .header-container {
     display: flex;
     justify-content: end;
-    width: 90%;
+    width: 100%;
+    padding-right: 5vw;
+    position: relative;
   }
 
   .header nav {
-    display: none;
+    display: block;
+    /* background-color: blue; */
+    position: absolute;
+  }
+
+  .header nav ul {
+    /* background-color: red; */
+    padding: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
   }
 
   /* heroku section */
@@ -380,22 +396,25 @@ body {
   }
 
   .header-container {
-    display: flex;
     justify-content: center;
-    width: 90%;
     align-items: center;
+    position: static;
+    padding: 0;
   }
 
   .header nav {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: static;
   }
 
   .header nav ul {
     padding: 0;
     width: 50%;
+    height: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 8px;
     list-style: none;
