@@ -440,6 +440,7 @@ body {
     position: static;
     background-color: transparent;
     height: auto;
+    transform: none;
   }
 
   .header nav ul {
@@ -460,6 +461,10 @@ body {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .header nav ul li a:hover {
+    color: var(--primary-green);
   }
 
   .header::before {
