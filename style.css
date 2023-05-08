@@ -37,35 +37,53 @@ body {
 @media screen and (min-width: 375px) {
   /* header section */
   .header {
-    display: flex;
     height: 5vh;
-    justify-content: center;
+    position: relative;
+    z-index: 9999;
   }
 
   .header-container {
-    display: flex;
-    justify-content: end;
     width: 100%;
-    padding-right: 5vw;
     position: relative;
   }
 
-  .header nav {
-    display: block;
-    /* background-color: blue; */
+  .header button {
     position: absolute;
+    z-index: 1;
+    right: 10%;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .header nav {
+    /* display: none; */
+    display: block;
+    background-color: #e8e9f0;
+    position: absolute;
+    height: 100vh;
   }
 
   .header nav ul {
-    /* background-color: red; */
-    padding: 0;
+    box-sizing: border-box;
+    padding-top: 64px;
+    margin: 0;
+    background-color: white;
     width: 100vw;
-    height: 90vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 8px;
+    justify-content: start;
+    gap: 40px;
     list-style: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .header nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 32px;
   }
 
   /* heroku section */
@@ -112,7 +130,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 8%;
+    bottom: 13%;
     left: 0;
     right: 0;
   }
@@ -387,6 +405,8 @@ body {
   /* header section */
 
   .header {
+    display: flex;
+    justify-content: center;
     height: 72px;
     background-color: transparent;
   }
@@ -396,6 +416,7 @@ body {
   }
 
   .header-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     position: static;
@@ -407,9 +428,12 @@ body {
     display: flex;
     justify-content: center;
     position: static;
+    background-color: transparent;
+    height: auto;
   }
 
   .header nav ul {
+    background-color: transparent;
     padding: 0;
     width: 50%;
     height: auto;
