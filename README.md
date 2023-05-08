@@ -8,9 +8,11 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-- [👥 Authors](#authors)
+- [👥 Author](#author)
+- [👥 Contributors](#contributors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -43,7 +45,13 @@ This will be my portfolio during microverse program
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://ichsansandy.github.io/portfolio-microverse/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -65,13 +73,21 @@ This project just contains an index.html and style.css with linters to check any
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 👤 Ichsan Sandy
 
 - GitHub: [@ichsansandy](https://github.com/ichsansandy)
 - Twitter: [@1chsansandy](https://twitter.com/1chsansandy)
 - LinkedIn: [Ichsan Sandy](https://linkedin.com/in/ichsans)
+
+## 👥 Contributors <a name="contributors"></a>
+
+👤 Jansue T
+
+- GitHub: [@JansueT](https://github.com/JansueT)
+- Instagram: [@cansuetas](https://www.instagram.com/cansuetas/)
+- LinkedIn: [Cansue T](https://www.linkedin.com/in/cansu-tas-467844251/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
