@@ -12,5 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
         primaryNavigation.setAttribute('data-visible', false);
       }
     });
+    navLinkMenu.forEach((element) => {
+      element.addEventListener('click', () => {
+        primaryNavigation.setAttribute('data-visible', false);
+      });
+    });
   }
 });
