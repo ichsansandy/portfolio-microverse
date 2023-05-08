@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
   --primary-green: #36b37e;
@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -56,12 +56,22 @@ body {
     border: none;
   }
 
+  /* .mobile-menu-toggle:hover nav {
+    transform: translateY(0);
+  } */
+
   .header nav {
     /* display: none; */
     display: block;
-    background-color: #e8e9f0;
     position: absolute;
     height: 100vh;
+    transform: translateY(-100%);
+    transition: transform 450ms ease-in, background-color 200ms ease-in 450ms;
+  }
+
+  .header nav[data-visible='true'] {
+    transform: translateY(0%);
+    background-color: #e8e9f0;
   }
 
   .header nav ul {
@@ -233,7 +243,7 @@ body {
 
   .aboutme::before {
     position: absolute;
-    content: "";
+    content: '';
     background: url(assets/illustration1-aboutme-mobile.svg);
     width: 68px;
     height: 110px;
@@ -243,7 +253,7 @@ body {
 
   .aboutme::after {
     position: absolute;
-    content: "";
+    content: '';
     background: url(assets/illustration2-aboutme-mobile.svg);
     width: 71px;
     height: 58px;
@@ -326,7 +336,7 @@ body {
   }
 
   .form-container::after {
-    content: "";
+    content: '';
     position: absolute;
     background-image: url(/assets/Frame.svg);
     bottom: -20%;
@@ -453,7 +463,7 @@ body {
   }
 
   .header::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 140vh;
@@ -530,7 +540,7 @@ body {
 
   .aboutme::before {
     position: absolute;
-    content: "";
+    content: '';
     background: url(assets/illustration2-aboutme-dekstop.svg);
     width: 224px;
     height: 245px;
@@ -540,7 +550,7 @@ body {
 
   .aboutme::after {
     position: absolute;
-    content: "";
+    content: '';
     background: url(assets/illustration1-aboutme-dekstop.svg);
     width: 236px;
     height: 128px;
@@ -574,7 +584,7 @@ body {
   }
 
   .form::before {
-    content: "";
+    content: '';
     position: absolute;
     background-image: url(/assets/form-ilustration1-dekstop.svg);
     width: 194px;
@@ -584,7 +594,7 @@ body {
   }
 
   .form::after {
-    content: "";
+    content: '';
     position: absolute;
     background-image: url(/assets/form-ilustration2-dekstop.svg);
     width: 131px;
