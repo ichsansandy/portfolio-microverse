@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-green: #36b37e;
   --secondary-green: #c5e9da;
@@ -56,7 +60,6 @@ body {
     border: none;
   }
 
-
   .header nav {
     /* display: none; */
     display: block;
@@ -70,6 +73,10 @@ body {
     transform: translateY(0%);
     transition: transform 450ms ease-in, background-color 200ms ease-in 450ms;
     background-color: #e8e9f0;
+  }
+
+  .prevent-scrolling {
+    overflow: hidden;
   }
 
   .header nav ul {
