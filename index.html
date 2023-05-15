@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
       <div class="header-container">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M11.0001 15C11.0001 14.4477 11.4478 14 12.0001 14H28.0001C28.5524 14 29.0001 14.4477 29.0001 15C29.0001 15.5523 28.5524 16 28.0001 16H12.0001C11.4478 16 11.0001 15.5523 11.0001 15ZM11.0001 20C11.0001 19.4477 11.4478 19 12.0001 19L28.0001 19C28.5524 19 29.0001 19.4477 29.0001 20C29.0001 20.5523 28.5524 21 28.0001 21L12.0001 21C11.4478 21 11.0001 20.5523 11.0001 20ZM12.0001 24C11.4478 24 11.0001 24.4477 11.0001 25C11.0001 25.5523 11.4478 26 12.0001 26H28.0001C28.5524 26 29.0001 25.5523 29.0001 25C29.0001 24.4477 28.5524 24 28.0001 24H12.0001Z"
-            fill="#28352F" />
-        </svg>
-        <nav>
+        <button class="mobile-menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <svg class="hamburger" viewBox="0 0 100 100" width="30">
+            <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+            <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+            <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+          </svg>
+        </button>
+        <nav id="primary-navigation" data-visible="false">
           <ul>
             <li>
-              <a class="dark" href="#portfolio">Portfolio</a>
+              <a class="nav-link dark" href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a class="dark" href="#about">About</a>
+              <a class="nav-link dark" href="#about">About</a>
             </li>
             <li>
-              <a class="dark" href="#contact">Contact</a>
+              <a class="nav-link dark" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
