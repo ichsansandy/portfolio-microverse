@@ -489,8 +489,6 @@ body {
     line-height: 20px;
   }
 
-  
-
   .header::before {
     content: '';
     position: absolute;
