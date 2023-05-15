@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-green: #36b37e;
   --secondary-green: #c5e9da;
@@ -56,10 +60,6 @@ body {
     border: none;
   }
 
-  /* .mobile-menu-toggle:hover nav {
-    transform: translateY(0);
-  } */
-
   .header nav {
     /* display: none; */
     display: block;
@@ -75,13 +75,17 @@ body {
     background-color: #e8e9f0;
   }
 
+  .prevent-scrolling {
+    overflow: hidden;
+  }
+
   .header nav ul {
     box-sizing: border-box;
     padding-top: 64px;
     margin: 0;
     background-color: white;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
