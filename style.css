@@ -256,6 +256,25 @@ body {
     line-height: 24px;
   }
 
+  .modal {
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 20px 16px;
+    background-color: #fff;
+    padding: 16px;
+  }
+
+  .modal .tag-container {
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .modal-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   /* about me section */
   .aboutme {
     position: relative;
