@@ -25,4 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  const modalButtons = document.querySelectorAll('.modal-button');
+
+  
 });

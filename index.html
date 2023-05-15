@@ -7,7 +7,9 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script>
+    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet" />
+    <!-- incase the fontawesome link is not working -->
+    <!-- <script src="https://kit.fontawesome.com/d19de2aa55.js" crossorigin="anonymous"></script> -->
   </head>
   <body>
     <header class="header">
@@ -97,27 +99,35 @@
                 <li class="tag flex-center">Javascript</li>
                 <li class="tag flex-center">Ruby on Rails</li>
               </ul>
-              <button class="button card-button white">See project</button>
+              <button class="button card-button white modal-button" data-modal="modal1">See project</button>
             </div>
           </div>
 
           <!-- modal 1 -->
-          <dialog open class="modal">
-            <img src="assets/SnapshootPortfolio(1).png" width="100%" height="220px" alt="portfolio" />
-            <h3 class="modal-title">Keeping track of hundreds of components</h3>
-            <ul class="tag-container">
-              <li class="tag flex-center">HTML</li>
-              <li class="tag flex-center">Javascript</li>
-              <li class="tag flex-center">Ruby on Rails</li>
-            </ul>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-            </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-            </p>
-            <button class="button card-button white">See live</button>
-            <button class="button card-button white">See source</button>
+          <dialog id="modal1">
+            <div class="modal">
+              <img src="assets/SnapshootPortfolio(1).png" width="100%" height="220px" alt="portfolio" />
+              <h3 class="modal-title">Keeping track of hundreds of components</h3>
+              <ul class="tag-container">
+                <li class="tag flex-center">HTML</li>
+                <li class="tag flex-center">Javascript</li>
+                <li class="tag flex-center">Ruby on Rails</li>
+              </ul>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+              </p>
+              <div class="modal-button-container">
+                <button class="button card-button white">
+                  See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
+                </button>
+                <button class="button card-button white">
+                  See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
+                </button>
+              </div>
+            </div>
           </dialog>
 
           <div class="card">

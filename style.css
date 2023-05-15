@@ -264,23 +264,45 @@ body {
     line-height: 24px;
   }
 
-  .modal {
+  #modal1 {
+    width: 90%;
     box-sizing: border-box;
     border-radius: 20px;
-    margin: 20px 16px;
-    background-color: #fff;
     padding: 16px;
   }
 
+  .modal {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* .modal::backdrop {
+    background-color: rgb(0, 0, 0 / 0.5);
+  } */
+
   .modal .tag-container {
+    height: auto;
+    margin: 0;
     justify-content: start;
     gap: 10px;
   }
 
   .modal-title {
+    margin: 0;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
+  }
+
+  .modal p {
+    margin: 0;
+  }
+
+  .modal-button-container {
+    display: flex;
+    justify-content: space-around;
   }
 
   /* about me section */
