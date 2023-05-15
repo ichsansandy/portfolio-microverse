@@ -101,6 +101,10 @@ body {
     font-size: 32px;
   }
 
+  .header nav ul li a:hover {
+    color: var(--primary-green);
+  }
+
   .mobile-menu-toggle .line {
     transition: 1s;
     transform-origin: center;
@@ -485,9 +489,7 @@ body {
     line-height: 20px;
   }
 
-  .header nav ul li a:hover {
-    color: var(--primary-green);
-  }
+  
 
   .header::before {
     content: '';
