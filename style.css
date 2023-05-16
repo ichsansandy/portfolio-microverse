@@ -460,6 +460,7 @@ body {
 
   .form-container input {
     padding: 15px 16px;
+    border: 2px solid var(--border);
   }
 
   .form-container input::placeholder {
@@ -472,6 +473,7 @@ body {
   .form-container textarea {
     padding: 12px;
     height: 114px;
+    border: 2px solid var(--border);
   }
 
   .form-container textarea::placeholder {
@@ -482,11 +484,25 @@ body {
   }
 
   .form-container input:hover,
-  .form-container input:focus,
-  .form-container textarea:hover,
-  .form-container textarea:focus {
+  .form-container textarea:hover {
     border: 1px solid #60c095;
     outline: 1px solid #60c095;
+  }
+
+  .form-container:has(:required:has(:valid)) {
+    --border: var(--primary-green);
+  }
+
+  .form-container:has(:invalid) {
+    --border: red;
+  }
+
+  .form-container:has(:focus) {
+    --border: orange;
+  }
+
+  .form-container:has(:placeholder-shown) {
+    --border: #ccc;
   }
 
   .form-container button {
