@@ -192,4 +192,13 @@ window.addEventListener('DOMContentLoaded', () => {
     emailInput.value = formData.email;
     messageInput.value = formData.message;
   }
+
+  const errorMessage = document.querySelector('.error-message');
+
+  form.addEventListener('submit', (e) => {
+    if (emailInput.value.toLowerCase() !== emailInput.value) {
+      e.preventDefault();
+      errorMessage.style.display = 'block';
+    }
+  });
 });
