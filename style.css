@@ -644,7 +644,6 @@ body {
   }
 
   .modal-image {
-    background-image: var(--imageDekstop);
     height: 616px;
     max-width: 872px;
     background-size: cover;

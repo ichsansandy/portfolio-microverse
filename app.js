@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
   <dialog id="modal${portfolio.id}">
   <div class="modal">
   <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
-  <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}'); --imageDekstop:url('${portfolio.screenshotDekstop}')" width="100%" height="220px"></div>
+  <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}'); --imageDekstop:url('${portfolio.screenshotDekstop}')"></div>
   <h3 class="modal-title">${portfolio.title}</h3>
   <ul class="tag-container">
     ${techStack}
