@@ -26,12 +26,14 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Portfolio Card data
   const portfolioList = [
     {
       id: 1,
       title: 'Keeping track of hundreds of components',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: 'assets/SnapshootPortfolio(1).png',
+      screenshotDekstop: 'assets/SnapshootPortfolio(1)Dekstop.png',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -41,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
+      screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -50,6 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
+      screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -59,6 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
+      screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -68,6 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
+      screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -77,6 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
+      screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -86,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const cards = () => {
     const card = portfolioList.map(
       (portfolio) => `<div class="card">
-      <div class="card-image" style="background-image:url('${portfolio.screenshotMobile}')"></div>
+      <div class="card-image" style="--image:url('${portfolio.screenshotMobile}')"></div>
       <div class="card-info">
       <h4 class="card-title title-text center-text dark">${portfolio.title}</h4>
       <ul class="tag-container">
@@ -101,7 +108,7 @@ window.addEventListener('DOMContentLoaded', () => {
     <dialog id="modal${portfolio.id}">
     <div class="modal">
     <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
-    <img src=${portfolio.screenshotMobile} width="100%" height="220px" alt="portfolio" />
+    <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}'); --imageDekstop:url('${portfolio.screenshotDekstop}')" width="100%" height="220px"></div>
     <h3 class="modal-title">${portfolio.title}</h3>
     <ul class="tag-container">
     <li class="tag flex-center">${portfolio.techStack[0]}</li>
@@ -158,4 +165,24 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // const mediaQueryDekstop = window.matchMedia('(min-width: 768px)');
+
+  // mediaQueryDekstop.addEventListener('change', ({ matches }) => {
+  //   const modalImages = document.querySelectorAll('.modal-image');
+
+  //   if (matches) {
+  //     let counter = 0;
+  //     modalImages.forEach((element) => {
+  //       element.setAttribute('src', portfolioList[counter].screenshotDekstop);
+  //       counter += 1;
+  //     });
+  //   } else {
+  //     let counter = 0;
+  //     modalImages.forEach((element) => {
+  //       element.setAttribute('src', portfolioList[counter].screenshotMobile);
+  //       counter += 1;
+  //     });
+  //   }
+  // });
 });
