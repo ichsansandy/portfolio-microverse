@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 1,
       title: 'Keeping track of hundreds of components',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: 'assets/SnapshootPortfolio(1).png',
       screenshotDekstop: 'assets/SnapshootPortfolio(1)Dekstop.png',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 2,
       title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
       screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 3,
       title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
       screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 4,
       title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
       screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 5,
       title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
       screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 6,
       title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
       screenshotMobile: '#',
       screenshotDekstop: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -90,45 +90,44 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
-  const cards = () => {
-    const card = portfolioList.map(
-      (portfolio) => `<div class="card">
-      <div class="card-image" style="--image:url('${portfolio.screenshotMobile}')"></div>
-      <div class="card-info">
-      <h4 class="card-title title-text center-text dark">${portfolio.title}</h4>
-      <ul class="tag-container">
-      <li class="tag flex-center">${portfolio.techStack[0]}</li>
-      <li class="tag flex-center">${portfolio.techStack[1]}</li>
-      <li class="tag flex-center">${portfolio.techStack[2]}</li>
-      <li class="tag flex-center">${portfolio.techStack[3]}</li>
-      </ul>
-      <button class="button card-button white modal-button" data-modal="modal${portfolio.id}">See project</button>
-    </div>
-    </div>
-    <dialog id="modal${portfolio.id}">
-    <div class="modal">
-    <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
-    <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}'); --imageDekstop:url('${portfolio.screenshotDekstop}')" width="100%" height="220px"></div>
-    <h3 class="modal-title">${portfolio.title}</h3>
+  function cardAndModal(portfolio) {
+    const techStack = portfolio.techStack.map((element) => `<li class="tag flex-center">${element}</li>`).join('');
+
+    return `<div class="card">
+    <div class="card-image" style="--image:url('${portfolio.screenshotMobile}')"></div>
+    <div class="card-info">
+    <h4 class="card-title title-text center-text dark">${portfolio.title}</h4>
     <ul class="tag-container">
-    <li class="tag flex-center">${portfolio.techStack[0]}</li>
-    <li class="tag flex-center">${portfolio.techStack[1]}</li>
-    <li class="tag flex-center">${portfolio.techStack[2]}</li>
+     ${techStack}
     </ul>
-    <p>${portfolio.details}</p>
-    <p>${portfolio.details}</p>
-    <div class="modal-button-container">
-    <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
-    See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
-    </a>
-    <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
-    See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
-    </a>
-    </div>
-    </div>
-    </dialog>
-    `,
-    );
+    <button class="button card-button white modal-button" data-modal="modal${portfolio.id}">See project</button>
+  </div>
+  </div>
+  <dialog id="modal${portfolio.id}">
+  <div class="modal">
+  <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
+  <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}'); --imageDekstop:url('${portfolio.screenshotDekstop}')" width="100%" height="220px"></div>
+  <h3 class="modal-title">${portfolio.title}</h3>
+  <ul class="tag-container">
+    ${techStack}
+  </ul>
+  <p>${portfolio.details}</p>
+  <p>${portfolio.details}</p>
+  <div class="modal-button-container">
+  <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
+  See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
+  </a>
+  <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
+  See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
+  </a>
+  </div>
+  </div>
+  </dialog>
+  `;
+  }
+
+  const cards = () => {
+    const card = portfolioList.map(cardAndModal);
     return card;
   };
 
