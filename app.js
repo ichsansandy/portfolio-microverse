@@ -29,9 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const portfolioList = [
     {
       id: 1,
-      title: 'Multi-Post Stories Gain+Glory',
+      title: 'Keeping track of hundreds of components',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
-      screenshot: 'assets/SnapshootPortfolio(1).png',
+      screenshotMobile: 'assets/SnapshootPortfolio(1).png',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
       id: 2,
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
-      screenshot: '#',
+      screenshotMobile: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
       id: 3,
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
-      screenshot: '#',
+      screenshotMobile: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
       id: 4,
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
-      screenshot: '#',
+      screenshotMobile: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
       id: 5,
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
-      screenshot: '#',
+      screenshotMobile: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
       id: 6,
       title: 'Multi-Post Stories Gain+Glory',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Ruby on Rails'],
-      screenshot: '#',
+      screenshotMobile: '#',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
       source: 'https://github.com/ichsansandy/portfolio-microverse',
       live: 'https://github.com/ichsansandy/portfolio-microverse',
@@ -86,21 +86,22 @@ window.addEventListener('DOMContentLoaded', () => {
   const cards = () => {
     const card = portfolioList.map(
       (portfolio) => `<div class="card">
-    <div class="card-image"></div>
-    <div class="card-info">
-    <h4 class="card-title title-text center-text dark">${portfolio.title}</h4>
-    <ul class="tag-container">
-    <li class="tag flex-center">${portfolio.techStack[0]}</li>
-    <li class="tag flex-center">${portfolio.techStack[1]}</li>
-    <li class="tag flex-center">${portfolio.techStack[2]}</li>
-    <li class="tag flex-center">${portfolio.techStack[3]}</li>
-    </ul>
-    <button class="button card-button white modal-button" data-modal="modal${portfolio.id}">See project</button>
+      <div class="card-image" style="background-image:url('${portfolio.screenshotMobile}')"></div>
+      <div class="card-info">
+      <h4 class="card-title title-text center-text dark">${portfolio.title}</h4>
+      <ul class="tag-container">
+      <li class="tag flex-center">${portfolio.techStack[0]}</li>
+      <li class="tag flex-center">${portfolio.techStack[1]}</li>
+      <li class="tag flex-center">${portfolio.techStack[2]}</li>
+      <li class="tag flex-center">${portfolio.techStack[3]}</li>
+      </ul>
+      <button class="button card-button white modal-button" data-modal="modal${portfolio.id}">See project</button>
     </div>
     </div>
     <dialog id="modal${portfolio.id}">
     <div class="modal">
-    <img src=${portfolio.screenshot} width="100%" height="220px" alt="portfolio" />
+    <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
+    <img src=${portfolio.screenshotMobile} width="100%" height="220px" alt="portfolio" />
     <h3 class="modal-title">${portfolio.title}</h3>
     <ul class="tag-container">
     <li class="tag flex-center">${portfolio.techStack[0]}</li>
@@ -110,20 +111,16 @@ window.addEventListener('DOMContentLoaded', () => {
     <p>${portfolio.details}</p>
     <p>${portfolio.details}</p>
     <div class="modal-button-container">
-    <button class="button card-button white">
-    <a href=${portfolio.live} target="_blank">
-        See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
-        </a>
-        </button>
-        <button class="button card-button white">
-        <a href=${portfolio.source} target="_blank">
-        See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
-        </a>
-        </button>
-        </div>
-        </div>
-        </dialog>
-        `,
+    <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
+    See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
+    </a>
+    <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
+    See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
+    </a>
+    </div>
+    </div>
+    </dialog>
+    `,
     );
     return card;
   };
@@ -131,6 +128,8 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.card-container').innerHTML = cards().join('');
 
   const modalButtons = document.querySelectorAll('.modal-button');
+  const closeButtons = document.querySelectorAll('.close-modal-button');
+
   if (modalButtons) {
     // eslint-disable-next-line no-plusplus
     for (let index = 0; index < modalButtons.length; index++) {
@@ -140,7 +139,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
       element.addEventListener('click', () => {
         modal.showModal();
+        body.classList.add('prevent-scrolling');
       });
     }
+  }
+
+  if (closeButtons) {
+    closeButtons.forEach((element) => {
+      const modalId = element.getAttribute('data-modal');
+      const modal = document.getElementById(`${modalId}`);
+
+      element.addEventListener('click', () => {
+        modal.close();
+      });
+
+      modal.addEventListener('close', () => {
+        body.classList.remove('prevent-scrolling');
+      });
+    });
   }
 });
