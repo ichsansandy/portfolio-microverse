@@ -266,10 +266,10 @@
       <div class="form">
         <h2 class="primary-text dark center-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form class="form-container" action="https://formspree.io/f/mzbqodyb" method="POST">
-          <input class="dekstop-hidden" placeholder="Full name" type="text" name="full_name" maxlength="30" required />
+          <input id="fullnameInput" class="dekstop-hidden" placeholder="Full name" type="text" name="full_name" maxlength="30" required />
           <div class="first-last-name-container mobile-hidden">
-            <input placeholder="First name" type="text" name="first_name" maxlength="30" required />
-            <input placeholder="Last name" type="text" name="last_name" maxlength="30" required />
+            <input id="firstnameInput" placeholder="First name" type="text" name="first_name" maxlength="30" required />
+            <input id="lastnameInput" placeholder="Last name" type="text" name="last_name" maxlength="30" required />
           </div>
           <input type="email" name="email" placeholder="Email address" pattern="[^A-Z\s]+$" required />
           <textarea name="message" maxlenght="500" placeholder="Hey I’d like to connect to..." required></textarea>
