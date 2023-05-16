@@ -223,6 +223,7 @@ body {
   .card-image {
     height: 53%;
     background-color: #d0d9d4;
+    background-image: var(--image);
   }
 
   .card-info {
@@ -262,6 +263,80 @@ body {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  dialog {
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 16px;
+    border: none;
+  }
+
+  dialog::backdrop {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+  }
+
+  .modal {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    position: relative;
+  }
+
+  .modal-image {
+    background-image: var(--imageMobile);
+    width: 100%;
+    height: 220px;
+  }
+
+  .modal .tag-container {
+    height: auto;
+    margin: 0;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .modal-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .modal p {
+    margin: 0;
+  }
+
+  .modal-button-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .modal-link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .modal-button-container span {
+    margin-left: 8px;
+  }
+
+  .close-modal-button {
+    position: absolute;
+    aspect-ratio: 1;
+    right: 15px;
+    top: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .close-modal-button:hover {
+    background-color: var(--primary-green);
+    color: #fff;
   }
 
   /* about me section */
@@ -561,6 +636,42 @@ body {
   .card-title {
     height: auto;
     width: 60%;
+  }
+
+  dialog {
+    max-width: 920px;
+    padding: 24px;
+  }
+
+  .modal-image {
+    height: 616px;
+    max-width: 872px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+  }
+
+  .modal-title {
+    width: 60%;
+  }
+
+  .close-modal-button {
+    display: block;
+    width: 40px;
+    padding: 8px;
+    position: static;
+    place-self: end;
+    background-color: #c1c7d0;
+    border-radius: 8px;
+  }
+
+  .modal-button-container {
+    width: 40%;
+    position: absolute;
+    bottom: 22%;
+    right: 0;
+    gap: 12px;
+    justify-content: end;
   }
 
   /* aboutme section */
