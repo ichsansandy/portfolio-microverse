@@ -786,6 +786,12 @@ body {
     gap: 24px;
   }
 
+  .error-message {
+    font-style: italic;
+    color: red;
+    display: none;
+  }
+
   /* footer */
   .footer {
     margin-top: 72px;

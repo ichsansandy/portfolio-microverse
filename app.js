@@ -164,4 +164,16 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  const form = document.querySelector('.form-container');
+  const emailInput = document.querySelector('#emailInput');
+
+  const errorMessage = document.querySelector('.error-message');
+
+  form.addEventListener('submit', (e) => {
+    if (emailInput.value.toLowerCase() !== emailInput.value) {
+      e.preventDefault();
+      errorMessage.style.display = 'block';
+    }
+  });
 });
