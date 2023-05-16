@@ -165,24 +165,4 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // const mediaQueryDekstop = window.matchMedia('(min-width: 768px)');
-
-  // mediaQueryDekstop.addEventListener('change', ({ matches }) => {
-  //   const modalImages = document.querySelectorAll('.modal-image');
-
-  //   if (matches) {
-  //     let counter = 0;
-  //     modalImages.forEach((element) => {
-  //       element.setAttribute('src', portfolioList[counter].screenshotDekstop);
-  //       counter += 1;
-  //     });
-  //   } else {
-  //     let counter = 0;
-  //     modalImages.forEach((element) => {
-  //       element.setAttribute('src', portfolioList[counter].screenshotMobile);
-  //       counter += 1;
-  //     });
-  //   }
-  // });
 });
