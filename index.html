@@ -87,8 +87,7 @@
       <div class="section-container grid grid-col-1">
         <h2 class="primary-text dark center-text">My Recent Works</h2>
         <hr class="divider-rounded dekstop-hidden" />
-        <div class="card-container">
-        </div>
+        <div class="card-container"></div>
       </div>
     </section>
     <section id="about" class="flex-center flex-column align-center">
@@ -267,14 +266,15 @@
       <div class="form">
         <h2 class="primary-text dark center-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <form class="form-container" action="https://formspree.io/f/mzbqodyb" method="POST">
-          <input class="dekstop-hidden" placeholder="Full name" type="text" name="full_name" maxlenght="30" required />
+          <input class="dekstop-hidden" placeholder="Full name" type="text" name="full_name" maxlength="30"  />
           <div class="first-last-name-container mobile-hidden">
-            <input placeholder="First name" type="text" name="first_name" maxlenght="30" required />
-            <input placeholder="Last name" type="text" name="last_name" maxlenght="30" required />
+            <input placeholder="First name" type="text" name="first_name" maxlength="30"  />
+            <input placeholder="Last name" type="text" name="last_name" maxlength="30"  />
           </div>
-          <input type="email" name="email" placeholder="Email address" required />
+          <input id="emailInput" type="email" name="email" placeholder="Email address" required />
           <textarea name="message" maxlenght="500" placeholder="Hey I’d like to connect to..." required></textarea>
           <button class="button card-button white width-fit self-center" type="submit">Get in touch</button>
+          <span class="error-message">Email should be lower character</span>
         </form>
       </div>
     </section>
