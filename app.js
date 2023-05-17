@@ -166,7 +166,32 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   const form = document.querySelector('.form-container');
+  const fullnameInput = document.querySelector('#fullnameInput');
+  const firstnameInput = document.querySelector('#firstnameInput');
+  const lastnameInput = document.querySelector('#lastnameInput');
   const emailInput = document.querySelector('#emailInput');
+  const messageInput = document.querySelector('#messageInput');
+
+  form.addEventListener('input', () => {
+    const formData = {
+      fullname: fullnameInput.value,
+      firstname: firstnameInput.value,
+      lastname: lastnameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  if (formData) {
+    fullnameInput.value = formData.fullname;
+    firstnameInput.value = formData.firstname;
+    lastnameInput.value = formData.lastname;
+    emailInput.value = formData.email;
+    messageInput.value = formData.message;
+  }
 
   const errorMessage = document.querySelector('.error-message');
 
