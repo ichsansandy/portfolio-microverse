@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       id: 1,
       title: 'Keeping track of hundreds of components',
-      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
+      techStack: ['HTML', 'CSS', 'JavaScript'],
       screenshotMobile: 'assets/SnapshootPortfolio(1).png',
       screenshotDekstop: 'assets/SnapshootPortfolio(1)Dekstop.png',
       details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
@@ -40,13 +40,13 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 2,
-      title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
-      screenshotMobile: '#',
+      title: 'Awesome Books',
+      techStack: ['HTML', 'CSS', 'JavaScript'],
+      screenshotMobile: 'assets/awesome-books.png',
       screenshotDekstop: '#',
-      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-      source: 'https://github.com/ichsansandy/portfolio-microverse',
-      live: 'https://github.com/ichsansandy/portfolio-microverse',
+      details: 'A user-friendly website that allows you to easily catalog and share your favorite books, creating a virtual collection tailored to your literary preferences.',
+      source: 'https://github.com/ichsansandy/awesome-books-microverse/',
+      live: 'https://ichsansandy.github.io/awesome-books-microverse/',
     },
     {
       id: 3,
@@ -104,24 +104,33 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>
   </div>
   <dialog id="modal${portfolio.id}">
-  <div class="modal">
-  <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
-  <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}'); --imageDekstop:url('${portfolio.screenshotDekstop}')"></div>
-  <h3 class="modal-title">${portfolio.title}</h3>
-  <ul class="tag-container">
-    ${techStack}
-  </ul>
-  <p>${portfolio.details}</p>
-  <p>${portfolio.details}</p>
-  <div class="modal-button-container">
-  <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
-  See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
-  </a>
-  <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
-  See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
-  </a>
-  </div>
-  </div>
+    <div class="modal">
+      <button class="close-modal-button" data-modal="modal${portfolio.id}"><i class="fas fa-xmark fa-lg"></i></button>
+      <div class="modal-image" style="--imageMobile:url('${portfolio.screenshotMobile}')"></div>
+      <div class="modal-title-wrapper">
+        <h3 class="modal-title">${portfolio.title}</h3>
+        <div class="mobile-hidden modal-button-container display-flex">
+        <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
+        See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
+        </a>
+        <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
+        See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
+        </a>
+      </div>
+        </div>  
+        <ul class="tag-container">
+          ${techStack}
+        </ul>
+        <p>${portfolio.details}</p>
+        <div class="modal-button-container dekstop-hidden">
+          <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
+          See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
+          </a>
+          <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
+          See source <span><i class="fa-brands fa-github fa-xl fa-fw"></i></span>
+          </a>
+        </div>
+    </div>
   </dialog>
   `;
   }

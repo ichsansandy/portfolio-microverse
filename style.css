@@ -224,6 +224,8 @@ body {
     height: 53%;
     background-color: #d0d9d4;
     background-image: var(--image);
+    background-position: center;
+    background-size: cover;
   }
 
   .card-info {
@@ -675,11 +677,13 @@ body {
     border-radius: 8px;
   }
 
+  .modal-title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   .modal-button-container {
     width: 40%;
-    position: absolute;
-    bottom: 22%;
-    right: 0;
     gap: 12px;
     justify-content: end;
   }
@@ -796,6 +800,10 @@ body {
   .footer {
     margin-top: 72px;
     border-top: 1px gray solid;
+  }
+
+  .display-flex {
+    display: flex;
   }
 }
 
