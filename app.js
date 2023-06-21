@@ -30,13 +30,14 @@ window.addEventListener('DOMContentLoaded', () => {
   const portfolioList = [
     {
       id: 1,
-      title: 'Keeping track of hundreds of components',
+      title: 'Portfolio',
       techStack: ['HTML', 'CSS', 'JavaScript'],
-      screenshotMobile: 'assets/SnapshootPortfolio(1).png',
-      screenshotDekstop: 'assets/SnapshootPortfolio(1)Dekstop.png',
-      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-      source: 'https://github.com/ichsansandy/portfolio-microverse',
-      live: 'https://github.com/ichsansandy/portfolio-microverse',
+      screenshotMobile: 'assets/portfolio.png',
+      screenshotDekstop: '#',
+      details:
+        'Explore my web portfolio, designed with clean and modern HTML and CSS, showcasing a diverse range of projects and skills. With the integration of interactive features and animations using JavaScript, the portfolio provides an engaging and dynamic browsing experience, highlighting my abilities as a talented and innovative developer.',
+      source: 'https://github.com/ichsansandy/ichsansandy.github.io',
+      live: 'https://ichsansandy.github.io',
     },
     {
       id: 2,
@@ -57,36 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
       details: 'Effortlessly manage your daily tasks with our powerful to-do list website, Built using HTML/CSS/JS, bundle using Webpack with Unit test using Jest',
       source: 'https://github.com/ichsansandy/webpack-todo-list-microverse',
       live: 'https://ichsansandy.github.io/webpack-todo-list-microverse/dist/',
-    },
-    {
-      id: 4,
-      title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
-      screenshotMobile: '#',
-      screenshotDekstop: '#',
-      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-      source: 'https://github.com/ichsansandy/portfolio-microverse',
-      live: 'https://github.com/ichsansandy/portfolio-microverse',
-    },
-    {
-      id: 5,
-      title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
-      screenshotMobile: '#',
-      screenshotDekstop: '#',
-      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-      source: 'https://github.com/ichsansandy/portfolio-microverse',
-      live: 'https://github.com/ichsansandy/portfolio-microverse',
-    },
-    {
-      id: 6,
-      title: 'Multi-Post Stories Gain+Glory',
-      techStack: ['HTML', 'JavaScript', 'Ruby on Rails'],
-      screenshotMobile: '#',
-      screenshotDekstop: '#',
-      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-      source: 'https://github.com/ichsansandy/portfolio-microverse',
-      live: 'https://github.com/ichsansandy/portfolio-microverse',
     },
   ];
 
