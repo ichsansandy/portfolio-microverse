@@ -59,6 +59,26 @@ window.addEventListener('DOMContentLoaded', () => {
       source: 'https://github.com/ichsansandy/webpack-todo-list-microverse',
       live: 'https://ichsansandy.github.io/webpack-todo-list-microverse/dist/',
     },
+    {
+      id: 4,
+      title: 'Stockwise',
+      techStack: ['React', 'Redux', 'TailwindCSS'],
+      screenshotMobile: 'assets/stock-wise.png',
+      screenshotDekstop: '#',
+      details: 'Welcome to Stockwise, your ultimate destination for market insights and financial wisdom. Our cutting-edge app provides real-time data and analysis for 100 leading Nasdaq companies, empowering you to make informed investment decisions with confidence. It build with React Js and Tailwind CSS and use API finnhub.io and site.financialmodeling.com',
+      source: 'https://github.com/ichsansandy/stock-wise',
+      live: 'https://stock-wise.vercel.app/',
+    },
+    {
+      id: 5,
+      title: 'Kelar.in',
+      techStack: ['Java SpringBoot', 'MySQL', 'Firestore'],
+      screenshotMobile: 'assets/kelarin.png',
+      screenshotDekstop: '#',
+      details: 'Say hello to kelar.in, a revolutionary project management designed to take your team\'s productivity to the next level. Built with Java SpringBoot, MySQL, Firestore, ReactJs, React-Native, Tailwind-CSS',
+      source: 'https://github.com/ichsansandy/kelar.in',
+      live: '#',
+    },
   ];
 
   function cardAndModal(portfolio) {
@@ -81,7 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <div class="modal-title-wrapper">
         <h3 class="modal-title">${portfolio.title}</h3>
         <div class="mobile-hidden modal-button-container display-flex">
-        <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
+        <a class="button card-button modal-link ${portfolio.live === '#' ? ' isDisabled ' : ''} " href=${portfolio.live} target="_blank">
         See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
         </a>
         <a class="button card-button modal-link" href=${portfolio.source} target="_blank">
@@ -94,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
         </ul>
         <p>${portfolio.details}</p>
         <div class="modal-button-container dekstop-hidden">
-          <a class="button card-button modal-link" href=${portfolio.live} target="_blank">
+          <a class="button card-button modal-link ${portfolio.live === '#' ? ' isDisabled ' : ''} " href=${portfolio.live} target="_blank">
           See live <span><i class="fa-duotone fa-arrow-up-left-from-circle fa-rotate-90 fa-xl fa-fw"></i></span>
           </a>
           <a class="button card-button modal-link" href=${portfolio.source} target="_blank">

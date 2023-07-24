@@ -633,7 +633,6 @@ body {
 
   .card-container {
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
     row-gap: 24px;
     column-gap: 32px;
     place-self: center;
@@ -869,6 +868,9 @@ body {
   width: fit-content;
 }
 
-/* .self-center {
-  place-self: center;
-} */
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
